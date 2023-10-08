@@ -13,10 +13,10 @@ public class Hero {
 
     public static List<Hero> getAllHeroes() {
         return allHeroes;
-        }
+    }
 
-        public static void  setAllHeroes(List<Hero> allHeroes) {
-            Hero.allHeroes = allHeroes;
+    public static void  setAllHeroes(List<Hero> allHeroes) {
+        Hero.allHeroes = allHeroes;
 
     }
 
