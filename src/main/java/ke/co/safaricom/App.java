@@ -28,6 +28,10 @@ public class App {
             return modelAndView(new HashMap<>(), "hero.hbs");
         }), new HandlebarsTemplateEngine());
 
+        get("/squad",((request, response) -> {
+            return modelAndView(new HashMap<>(), "squad.hbs");
+        }),new HandlebarsTemplateEngine());
+
 
 
         }
