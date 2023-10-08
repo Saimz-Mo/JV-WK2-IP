@@ -26,5 +26,47 @@ public class Hero {
 
     public void setHeroId(int heroId) {
         this.heroId = heroId;
+
+    public Hero(String name, String age, String specialPower, String weakness) {
+            this.name = name;
+            this.age = age;
+            this.specialPower = specialPower;
+            this.weakness = weakness;
+            allHeroes.add(this);
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getAge() {
+            return age;
+        }
+
+        public void setAge(String age) {
+            this.age = age;
+        }
+
+        public String getSpecialPower() {
+            return specialPower;
+        }
+
+        public void setSpecialPower(String specialPower) {
+            this.specialPower = specialPower;
+        }
+
+        public String getWeakness() {
+            return weakness;
+        }
+
+        public void setWeakness(String weakness) {
+            this.weakness = weakness;
+        }
     }
+
 }
+
