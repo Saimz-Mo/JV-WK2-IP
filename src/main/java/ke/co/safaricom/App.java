@@ -4,6 +4,8 @@ import ke.co.safaricom.models.Hero;
 import ke.co.safaricom.models.Squad;
 import ke.co.safaricom.services.HeroService;
 import ke.co.safaricom.services.SquadService;
+import spark.ModelAndView;
+import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.HashMap;
 import java.util.List;
@@ -101,6 +103,3 @@ public class App {
 }
 
 
-
-        }
-    }
