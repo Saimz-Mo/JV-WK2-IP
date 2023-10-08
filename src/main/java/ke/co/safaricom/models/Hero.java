@@ -26,6 +26,7 @@ public class Hero {
 
     public void setHeroId(int heroId) {
         this.heroId = heroId;
+    }
 
     public Hero(String name, String age, String specialPower, String weakness) {
             this.name = name;
@@ -66,7 +67,7 @@ public class Hero {
         public void setWeakness(String weakness) {
             this.weakness = weakness;
         }
-    }
-
 }
+
+
 
