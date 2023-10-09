@@ -1,0 +1,40 @@
+{{#partial "content"}}
+    <div class="container">
+        <div class="row">
+            <br><br>
+            <div>
+                <h1 class="text-center text-success">WELCOME TO HEROES AND SQUADS</h1>
+                <h5 class="text-center text-success">Create a Hero or Squad Here</h5>
+            </div>
+            <br>
+            <div class="btn-index">
+                <form action="/hero">
+                    <br> <br>
+                    <button
+                            type="submit"
+                            class="btn btn-outline-danger"
+                    >
+                        Add Hero
+                    </button>
+                    <br> <br> <br>
+                </form>
+
+                <form action="/squad">
+                    <button
+                            type="submit"
+                            class="btn btn-outline-danger"
+                    >
+                        Add Squad
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}
