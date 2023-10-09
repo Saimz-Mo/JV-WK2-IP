@@ -1,0 +1,62 @@
+{{#partial "content"}}
+    <div class="container">
+        <div class="row">
+            <form action="/hero/new" method="post" class="hero-form">
+                <br />
+                <div class="form-group">
+                    <label for="hero" class="text-success">Hero Name</label>
+                    <input
+                            type="text"
+                            required
+                            class="form-control"
+                            name="hero"
+                            id="hero"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="age" class="text-success">Hero Age</label>
+                    <input type="number"
+                           required
+                           class="form-control"
+                           name="age"
+                           id="age"
+                    >
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <label for="power" class="text-success">Hero Power</label>
+                    <select class="form-control" id="power" name="power">
+                        <option>Reality warping</option>
+                        <option>Telekinesis</option>
+                        <option>Time manipulation</option>
+                        <option>Enhanced intelligence</option>
+                        <option>Dimensional travel</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="weakness" class="text-success">Hero Weakness</label>
+                    <select class="form-control" id="weakness" name="weakness">
+                        <option>Blindfolds</option>
+                        <option>Passengers</option>
+                        <option>Men</option>
+                        <option>Battery Life</option>
+                        <option>Nature</option>
+                        <option>Subconscious Guilt</option>
+                    </select>
+                </div>
+                <br />
+                <button
+                        type="submit"
+                        class="btn btn-outline-danger"
+                >
+                    Add
+                </button>
+            </form>
+        </div>
+    </div>
+
+{{/partial}}
+
+{{>layout.hbs}}
