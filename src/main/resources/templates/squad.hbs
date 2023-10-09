@@ -1,0 +1,33 @@
+{{#partial "content"}}
+    <div class="container-fluid">
+        <div class="row">
+            <form action="/squad/new" method="post" class="squad-form">
+                <br />
+                <div class="form-group ">
+                    <label for="squad" class="text-success">Squad Name</label>
+                    <input type="text" class="form-control" name="squad" id="squad" >
+                </div>
+                <div class="form-group">
+                    <label for="size" class="text-success">Squad Size</label>
+                    <input type="number" class="form-control" name="size" id="size">
+
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="task" class="text-success">Squad Mission</label>
+                    <input type="text" class="form-control" name="task" id="task" >
+                </div>
+                <br />
+                <button
+                        type="submit"
+                        class="btn btn-outline-danger"
+                >
+                    Add
+                </button>
+
+            </form>
+        </div>
+    </div>
+{{/partial}}
+
+{{>layout.hbs}}
