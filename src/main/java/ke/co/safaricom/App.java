@@ -30,7 +30,7 @@ public class App {
         staticFileLocation("/public/");
 
         get("/",((request, response) ->  {
-            return modelAndView(new HashMap<>(), "index.hbs");
+            return modelAndView(new HashMap<>(), "layout.hbs");
         }), new HandlebarsTemplateEngine());
 
         get("hero",((request, response) -> {
