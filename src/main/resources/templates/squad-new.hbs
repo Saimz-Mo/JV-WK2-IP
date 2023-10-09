@@ -1,0 +1,38 @@
+{{#partial "content"}}
+    <h2 style="margin-left: 30%;  text-decoration: underline">CHECKOUT YOUR SQUADS LIST!!</h2>
+    <br><br>
+    {{#each Squads}}
+        <div   class="d-inline-flex justify-content-around card text-white border-light mb-3 bg-primary"
+               style="max-width: 20rem; margin-right: 1%; margin-left: 6%"
+               id="cards">
+            <div class="card-header text-success">Squad Name: {{squadName}}</div>
+            <div class="card-body">
+                <p class="card-text">Squad Size: {{maxSize}}</p>
+                <p class="card-text">Squad Cause: {{squadCause}}</p>
+            </div>
+        </div>
+    {{/each}}
+    <div class="btn-index" style="margin-left: 45%">
+        <form action="/hero" >
+            <br> <br>
+            <button
+                    type="submit"
+                    class="btn btn-outline-primary btn-sm"
+            >
+                Add Hero
+            </button>
+            <br> <br> <br>
+        </form>
+        <form action="/squad" >
+            <button
+                    type="submit"
+                    class="btn btn-outline-primary btn-sm"
+            >
+                Add Squad
+            </button>
+        </form>
+
+    </div>
+{{/partial}}
+
+{{>layout.hbs}}
